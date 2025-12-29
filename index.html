@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <meta name="description" content="Portfolio Profesional Rendy Nur Firmansyah. Web Developer & Data Analyst.">
-    <meta name="keywords" content="Rendy Nur Firmansyah, Portfolio, Web Developer">
+    <title>Rendy Nur Firmansyah | Portfolio Profesional</title>
+    <meta name="description" content="Portfolio Resmi Rendy Nur Firmansyah. Web Developer & Data Analyst Profesional berbasis di Purworejo. Keahlian: Coding, Desain, dan Analisis Data.">
+    <meta name="keywords" content="Rendy Nur Firmansyah, Rendy, Firman, Rendy Nur, Portofolio Rendy, Web Portofolio Rendy, Rendy Purworejo, Rendot, Web Developer, Data Analyst, Portfolio Indonesia">
     <meta name="author" content="Rendy Nur Firmansyah">
-    <title>Rendy Nur Firmansyah | Portfolio</title>
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    <meta name="geo.placename" content="Purworejo, Indonesia">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rendynur.netlify.app/"> <meta property="og:title" content="Rendy Nur Firmansyah | Portfolio">
+    <meta property="og:description" content="Jelajahi karya dan pengalaman Rendy Nur Firmansyah dalam Web Development dan Data Analysis.">
+    <meta property="og:image" content="image/rnf.png"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rendy Nur Firmansyah | Portfolio">
+    <meta name="twitter:description" content="Portfolio Profesional Rendy Nur Firmansyah.">
+
+    <link rel="icon" type="image/png" href="image/rnf.png">
+    <link rel="apple-touch-icon" href="image/rnf.png">
     
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Rendy Nur Firmansyah",
+      "jobTitle": "Web Developer & Data Analyst",
+      "url": "https://rendynur.netlify.app",
+      "sameAs": [
+        "http://linkedin.com/in/rendynurf452",
+        "http://instagram.com",
+        "http://facebook.com"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Purworejo",
+        "addressRegion": "Jawa Tengah",
+        "addressCountry": "Indonesia"
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
@@ -136,7 +170,6 @@
             position: relative; width: 100px; height: 100px;
             display: flex; justify-content: center; align-items: center;
         }
-        /* Central Core */
         .loader-core {
             width: 20px; height: 20px; background: var(--primary);
             border-radius: 50%;
@@ -144,14 +177,12 @@
             animation: pulse-core 2s infinite ease-in-out;
             z-index: 2;
         }
-        /* Orbit Ring */
         .loader-orbit {
             position: absolute; width: 100%; height: 100%;
             border: 1px solid rgba(128,128,128,0.2);
             border-radius: 50%;
             animation: spin-orbit 3s linear infinite;
         }
-        /* Planet/Satellite */
         .loader-orbit::after {
             content: ''; position: absolute; top: 0; left: 50%;
             width: 12px; height: 12px;
@@ -165,7 +196,6 @@
             font-weight: 600; color: var(--primary); opacity: 0.8; 
             animation: fade-text 1.5s infinite alternate; 
         }
-        
         @keyframes spin-orbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         @keyframes pulse-core { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: 0.7; } }
         @keyframes fade-text { 0% { opacity: 0.4; } 100% { opacity: 1; } }
@@ -193,14 +223,12 @@
             display: flex; align-items: center; gap: 6px;
         }
         
-        /* Mascot (Status Indicator) */
         .mascot-container { 
             width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; 
             border-radius: 50%; background: rgba(var(--primary-rgb), 0.1); 
             color: var(--primary); font-size: 0.9rem;
         }
         
-        /* Marquee */
         .marquee-wrapper { 
             flex: 1; margin: 0 20px; overflow: hidden; position: relative; height: 24px; display: flex; align-items: center; 
             mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); 
@@ -222,15 +250,15 @@
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; 
         }
         
-        /* UPDATED HERO ROLES: TEGAS & BESAR */
+        /* HERO ROLES: TEGAS & BESAR */
         .hero-roles { 
-            font-size: 1.5rem; /* Lebih besar */
+            font-size: 1.5rem; 
             color: var(--primary); 
-            font-weight: 700; /* Lebih tebal */
-            text-transform: uppercase; /* Lebih tegas */
+            font-weight: 700; 
+            text-transform: uppercase; 
             letter-spacing: 1px;
             margin-bottom: 25px; 
-            text-shadow: 0 0 15px rgba(var(--primary-rgb), 0.4); /* Efek glow halus */
+            text-shadow: 0 0 15px rgba(var(--primary-rgb), 0.4);
         }
         
         /* HERO BIO: SOLID & READABLE */
@@ -248,7 +276,6 @@
             text-shadow: 0 1px 2px rgba(0,0,0,0.8);
             font-weight: 400;
         }
-        /* Light mode adjustment for bio */
         [data-theme="light"] .hero-bio {
             background: rgba(255, 255, 255, 0.5);
             text-shadow: none;
@@ -270,7 +297,7 @@
             position: relative; overflow: hidden;
             text-decoration: none;
         }
-        /* Shine Effect on Social Button */
+        /* Shine Effect */
         .social-btn::before {
             content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 50%;
             background: linear-gradient(to bottom, rgba(255,255,255,0.15), transparent);
@@ -291,7 +318,6 @@
         }
         @keyframes floatLiquid { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(1deg); } }
 
-        /* The Glass Container */
         .profile-glass-bg {
             position: absolute; inset: 0; border-radius: 30px;
             background: var(--glass-bg);
@@ -301,7 +327,6 @@
             box-shadow: var(--shadow);
             transform: rotate(-3deg); transition: 0.6s var(--ease-liquid);
         }
-        /* Glossy Reflection */
         .profile-glass-bg::after {
             content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%;
             background: linear-gradient(to bottom, rgba(255,255,255,0.1), transparent);
@@ -313,10 +338,9 @@
             object-fit: cover; border-radius: 24px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
             transform: translateZ(20px); transition: 0.6s var(--ease-liquid);
-            will-change: transform; /* Optimized for performance */
+            will-change: transform;
         }
 
-        /* Hover Interaction Profile */
         .profile-wrapper:hover .profile-glass-bg { transform: rotate(0deg) scale(1.02); background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); }
         .profile-wrapper:hover .profile-img-real { transform: translateZ(40px) scale(1.05); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
 
@@ -325,7 +349,6 @@
         /* --- LIQUID GLASS CARDS (UNIVERSAL) --- */
         /* ========================================= */
         
-        /* Base Card Styling */
         .cv-card, .gallery-card {
             background: var(--glass-bg);
             backdrop-filter: blur(30px) saturate(120%);
@@ -335,14 +358,11 @@
             box-shadow: var(--shadow);
             position: relative; overflow: hidden;
             transition: all 0.4s var(--ease-liquid);
-            /* Performance Fixes */
-            transform: translateZ(0); 
-            will-change: transform, box-shadow;
+            transform: translateZ(0); will-change: transform, box-shadow;
         }
         
         .cv-card { padding: 32px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 10px; }
         
-        /* Hover Base for All Cards */
         .cv-card:hover, .gallery-card:hover {
             transform: translateY(-5px) scale(1.005);
             box-shadow: var(--shadow-hover);
@@ -354,9 +374,7 @@
         .cv-meta { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: inline-block; padding: 4px 10px; border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.05); }
         .cv-card p { color: var(--text-muted); font-size: 0.95rem; }
 
-        /* --- SECTION SPECIFIC ANIMATIONS (Smooth & Light) --- */
-
-        /* 1. Education: Soft Pulse (Breathing) */
+        /* Education */
         #educationList .cv-card { border-left: 3px solid #29B6F6; }
         #educationList .cv-card .cv-meta { color: #29B6F6; }
         #educationList .cv-card:hover::before {
@@ -365,10 +383,9 @@
             opacity: 1; transition: opacity 0.5s;
         }
 
-        /* 2. Experience: Shimmer Sweep */
+        /* Experience */
         #experienceList .cv-card { border-left: 3px solid #66BB6A; }
         #experienceList .cv-card .cv-meta { color: #66BB6A; }
-        #experienceList .cv-card { overflow: hidden; }
         #experienceList .cv-card::after {
             content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
@@ -376,11 +393,11 @@
         }
         #experienceList .cv-card:hover::after { left: 200%; transition: 1s ease-in-out; }
 
-        /* 3. Organization: Subtle Tilt */
+        /* Organization */
         #organizationList .cv-card { border-left: 3px solid #FFCA28; }
         #organizationList .cv-card .cv-meta { color: #FFCA28; }
         
-        /* 4. Gallery & Projects (Grid System) */
+        /* Gallery Grid */
         .marquee-section-container { 
             overflow: hidden; width: 100%; padding: 40px 0; 
             mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
@@ -398,7 +415,6 @@
         .gallery-card:hover .gallery-img { transform: scale(1.1); }
         .gallery-card:hover .overlay-icon { opacity: 1; transform: translate(-50%, -50%) scale(1); }
         
-        /* Overlay Icon (Search) */
         .overlay-icon {
             position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.8);
             width: 50px; height: 50px; background: rgba(0,0,0,0.6); border-radius: 50%;
@@ -406,14 +422,13 @@
             opacity: 0; transition: all 0.3s var(--ease-liquid); backdrop-filter: blur(5px);
         }
 
-        /* Achievements & Certs (Specific Colors) */
         #achievementList .gallery-card:hover { border-color: #FF7043; } 
         #certificateList .gallery-card:hover { border-color: #AB47BC; }
 
         /* --- UPDATED MODAL (SCROLLABLE & LINK) --- */
         .modal { 
             display: none; position: fixed; z-index: 10000; inset: 0; 
-            background-color: rgba(0,0,0,0.6); /* Darker backdrop */
+            background-color: rgba(0,0,0,0.6); 
             backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
             justify-content: center; align-items: center; padding: 20px; 
             opacity: 0; transition: opacity 0.3s ease; 
@@ -424,36 +439,32 @@
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
             border-radius: 24px;
-            padding: 15px; /* Sedikit padding agar konten tidak mepet border */
+            padding: 15px; 
             max-width: 800px; width: 100%;
             display: flex; flex-direction: column; gap: 0;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             transform: scale(0.9); transition: transform 0.4s var(--ease-liquid);
-            max-height: 90vh; /* Batasi tinggi total modal */
-            overflow: hidden; /* Kontainer utama tidak scroll, tapi children bisa */
+            max-height: 90vh; 
+            overflow: hidden; 
         }
         .modal.show .modal-body { transform: scale(1); }
         
-        /* Image di dalam modal */
         .modal-content { 
             width: 100%; max-height: 50vh; object-fit: contain; border-radius: 16px; 
-            background: rgba(0,0,0,0.2); 
-            flex-shrink: 0; /* Gambar tidak mengecil berlebihan */
+            background: rgba(0,0,0,0.2); flex-shrink: 0;
         }
         
-        /* Container Caption & Text (Scrollable Area) */
         .modal-text-container {
             padding: 20px 10px 10px 10px;
             text-align: center;
-            overflow-y: auto; /* Scroll jika teks panjang */
-            flex: 1; /* Mengisi sisa ruang */
+            overflow-y: auto; 
+            flex: 1; 
             display: flex; flex-direction: column; align-items: center;
         }
 
         #modalCaption h3 { margin-bottom: 8px; color: var(--primary); font-size: 1.2rem; }
-        #modalCaption p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; /* Jaga format paragraf */ }
+        #modalCaption p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; }
 
-        /* Tombol Link di Modal */
         #modalLinkBtn {
             margin-top: 20px;
             display: inline-flex; align-items: center; gap: 8px;
@@ -491,7 +502,7 @@
             .hero-img-container { justify-content: flex-end; padding-right: 20px; }
             .profile-wrapper { width: 340px; }
             .close-modal { top: -50px; right: 0; width: 40px; height: 40px; font-size: 2rem; background: rgba(255,255,255,0.1); }
-            .modal-body { overflow: visible; } /* Reset overflow on desktop modal container */
+            .modal-body { overflow: visible; }
             .modal-text-container { max-height: 30vh; }
         }
 
@@ -508,30 +519,16 @@
         /* 3. MOBILE (< 768px) */
         @media(max-width: 767px) {
             section { padding: 60px 0; }
-            
             nav { padding: 15px 20px; }
-            .header-datetime { display: none; } /* Hide time on mobile to save space */
-            
+            .header-datetime { display: none; }
             .hero-name { font-size: 2.2rem; }
-            
-            /* Mobile adjustment for new styles */
             .hero-roles { font-size: 1.2rem; letter-spacing: 0.5px; }
             .hero-bio { font-size: 0.95rem; }
-            
             .cv-card { padding: 24px; }
             .gallery-card { width: 260px; }
-            
-            /* Adjust Modal for Mobile */
-            .modal { padding: 0; align-items: flex-end; } /* Bottom sheet feel */
-            .modal-body { 
-                border-radius: 20px 20px 0 0; 
-                max-height: 85vh; 
-                width: 100%;
-                transform-origin: bottom; 
-                padding-bottom: 30px;
-            }
+            .modal { padding: 0; align-items: flex-end; } 
+            .modal-body { border-radius: 20px 20px 0 0; max-height: 85vh; width: 100%; transform-origin: bottom; padding-bottom: 30px; }
             .modal-content { max-height: 40vh; }
-            /* Ensure text scrolls if long */
             .modal-text-container { overflow-y: auto; padding-bottom: 20px; }
         }
     </style>
@@ -639,7 +636,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Rendy Nur Firmansyah | Jawa Tengah Indonesia. <span class="footer-signal"></span></p>
+            <p>© 2025 Rendy Nur Firmansyah | Jawa Tengah Indonesia <span class="footer-signal"></span></p>
         </div>
     </footer>
 
